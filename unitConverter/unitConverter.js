@@ -223,7 +223,7 @@ function lengthConverter() {
  
  }
  const resultDiv = document.getElementById('resultDiv1');
- result= result.toFixed(4)
+ 
  resultDiv.innerHTML = result;
  return result;
  }
@@ -275,7 +275,7 @@ function tempConverter(from , to , value) {
         }
     }
     const resultDiv = document.getElementById('resultDiv2');
-    result= result.toFixed(4)
+    
     resultDiv.innerHTML = result;
     return result
 }
@@ -357,7 +357,7 @@ function areaConverter() {
     }
     
     const resultDiv = document.getElementById('resultDiv3');
-    result= result.toFixed(4)
+    
     resultDiv.innerHTML = result;
     return result;
 }
@@ -439,7 +439,7 @@ function volumeConverter() {
     }
     
     const resultDiv = document.getElementById('resultDiv4');
-    result= result.toFixed(4)
+    
     resultDiv.innerHTML = result;
     return result;
 }
@@ -568,7 +568,7 @@ function weightConverter(from, to, value) {
         }
     }
 const resultDiv = document.getElementById('resultDiv5');
-result= result.toFixed(4) 
+
 resultDiv.innerHTML = result;
  return result
 
@@ -812,7 +812,7 @@ function timeConverter(from, to, value) {
         
         }
         const resultDiv = document.getElementById('resultDiv6');
-        result= result.toFixed(4)
+        
         resultDiv.innerHTML = result;
 
         return result
