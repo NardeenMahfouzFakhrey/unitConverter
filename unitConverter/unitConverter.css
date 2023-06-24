@@ -1,0 +1,176 @@
+body {
+    background-color: rgb(201, 248, 250);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Label-unit-converter {
+    color: black;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .nav {
+    background-color: #93dfe18f;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin: 0 10px;
+  }
+  
+  .Buttons-converter {
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 10px 20px;
+  }
+  
+  .Buttons-converter:link,
+  .Buttons-converter:visited {
+    color: black;
+    background-color: transparent;
+  }
+  
+  .Buttons-converter:hover {
+    background-color: azure;
+  }
+  
+  .Buttons-converter:active {
+    background-color: azure;
+  }
+  
+  .Label-length {
+    color: rgb(103, 142, 187);
+    border-radius: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Text-value {
+    color: black;
+    cursor: pointer;
+    margin-left: 150px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .result-div {
+    background-color: #93dfe18f;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .result {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Label-to {
+    color: rgb(3, 94, 133);
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 150px;
+    margin-right: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Label-from {
+    color: rgb(3, 94, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .Button-Convert1 {
+    background-color: rgb(114, 176, 215);
+    color: black;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-top: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Button-Convert1:active {
+    opacity: 0.5;
+  }
+  
+  .Button-Convert1:hover {
+    opacity: 0.8;
+    box-shadow: 7px 7px 7px black;
+  }
+  
+  .container-main {
+    border: 2px solid black;
+    background-color: rgb(236, 250, 252);
+    width: 630px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .select-bar {
+    border-radius: 7px;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding:5px;
+}
+
+.result-div {
+    font-size: 24px; 
+    margin-right: 2PX;
+}

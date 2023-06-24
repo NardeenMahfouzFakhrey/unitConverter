@@ -1,0 +1,270 @@
+<html><head>
+    <title> unit Converter</title>
+    <link href="unitConverter.css" rel="stylesheet">
+    <script src="unitConverter.js"></script>
+</head>
+
+<body class="body">
+    <p class="Label-unit-converter">Unit Converter</p>
+    <nav class="nav">
+      <ul>
+        <li class="Buttons-converter" onclick="showConverter('lengthConverterContainer')">Length Converter</li>
+        <li class="Buttons-converter" onclick="showConverter('tempConverterContainer')">Temp Converter</li>
+        <li class="Buttons-converter" onclick="showConverter('areaConverterContainer')">Area Converter</li>
+        <li class="Buttons-converter" onclick="showConverter('volumeConverterContainer')">Volume Converter</li>
+        <li class="Buttons-converter" onclick="showConverter('weightConverterContainer')">Weight Converter</li>
+        <li class="Buttons-converter" onclick="showConverter('timeConverterContainer')">Time Converter</li>
+      </ul>
+    </nav>
+    <br>
+
+    <div id="lengthConverterContainer" class="container-main">
+  
+            <br>
+            <label class="Label-length">Length Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv1"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>Meter</option>
+                <option>KiloMeter</option>
+                <option>CentiMeter</option>
+                <option>MiliMeter</option>
+                <option>NanoMeter</option>
+                <option>Mile</option>
+                <option>Foot</option>
+                <option>Inch</option>
+
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>Meter</option>
+                <option>KiloMeter</option>
+                <option>CentiMeter</option>
+                <option>MilliMeter</option>
+                <option>NanoMeter</option>
+                <option>Mile</option>
+                <option>Foot</option>
+                <option>Inch</option>
+            </select>
+            <br> <br>
+            <button class="Button-Convert1" onclick="lengthConverter()" > Convert </button>
+   
+    </div>
+
+
+    <div id="tempConverterContainer" class="container-main" style="display: none;">
+
+        
+            <br>
+            <label class="Label-length">Temp Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv2"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>celsius</option>
+                <option>kelvin</option>
+                <option>Fahrenheit</option>
+                
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>celsius</option>
+                <option>kelvin</option>
+                <option>Fahrenheit</option>
+            </select>
+            <br> <br>
+             <button class="Button-Convert1" onclick="tempConverter()" > Convert </button>
+    
+    </div>
+
+    <div id="areaConverterContainer" class="container-main" style="display: none;">
+             <br>
+            <label class="Label-length">Area Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv3"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>SquareMeter</option>
+                <option>SquareKiloMeter</option>
+                <option>SquareCentiMeter</option>
+                <option>SquareMilliMeter</option>
+                <option>SquareMicroMeter</option>
+                  
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>SquareMeter</option>
+                <option>SquareKiloMeter</option>
+                <option>SquareCentiMeter</option>
+                <option>SquareMilliMeter</option>
+                <option>SquareMicroMeter</option>
+            </select>
+            <br> <br>
+            <button class="Button-Convert1" onclick="areaConverter()" > Convert </button>
+        
+    </div>
+
+
+    <div id="volumeConverterContainer" class="container-main" style="display: none;">
+
+        <br>
+            <label class="Label-length">Volume Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv4"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>CubicMeter</option>
+                <option>Liter</option>
+                <option>CubicCentiMeter</option>
+                <option>CubicMilliMeter</option>
+                <option>MilliLiter</option>
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>CubicMeter</option>
+                <option>Liter</option>
+                <option>CubicCentiMeter</option>
+                <option>CubicMilliMeter</option>
+                <option>MilliLiter</option>
+            </select>
+            <br> <br>
+            <button class="Button-Convert1" onclick="volumeConverter()" > Convert </button>
+    </div>
+
+    <div id="weightConverterContainer" class="container-main" style="display: none;">
+
+        
+        <br>
+            <label class="Label-length">Weight Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv5"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>Kilogram</option>
+                <option>Miligram</option>
+                <option>Gram</option>
+                <option>pound</option>
+                <option>Metric Ton</option>
+                <option>Short Ton</option>
+                <option>Long Ton</option>
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>Kilogram</option>
+                <option>Miligram</option>
+                <option>Gram</option>
+                <option>pound</option>
+                <option>Metric Ton</option>
+                <option>Short Ton</option>
+                <option>Long Ton</option>
+            </select>
+            <br> <br>
+            <button class="Button-Convert1" onclick="weightConverter()" > Convert </button>
+        
+    </div>
+
+
+    <div id="timeConverterContainer" class="container-main" style="display: none;">
+
+        <br>
+            <label class="Label-length">Time Converter</label>
+            <br> <br>
+            <textarea class="Text-value" placeholder="value"></textarea>
+            <br> <br>
+            <div class="result-div">
+                <br>
+            <label class = "result"> Result:</label>
+            <div id="resultDiv6"></div>
+            </div>
+            <br> <br>
+            <label class="Label-from">From</label>
+            <select class="select-bar">
+                <option>Second</option>
+                <option>Milisecond</option>
+                <option>Nanosecond</option>
+                <option>Picosecond</option>
+                <option>Minute</option>
+                <option>Hour</option>
+                <option>Day</option>
+                <option>Week</option>
+                <option>Month</option>
+                <option>Year</option>
+            </select>
+            <br> <br>
+            <label class="Label-to">To</label>
+            <select class="select-bar">
+                <option>Second</option>
+                <option>Milisecond</option>
+                <option>Nanosecond</option>
+                <option>Picosecond</option>
+                <option>Minute</option>
+                <option>Hour</option>
+                <option>Day</option>
+                <option>Week</option>
+                <option>Month</option>
+                <option>Year</option>
+            </select>
+            <br> <br>
+            <button class="Button-Convert1" onclick="timeConverter()" > Convert </button>
+    </div>
+
+
+
+
+<script>
+
+
+    function showConverter(containerId) {
+            var container = document.getElementById(containerId);
+            var allContainers = document.querySelectorAll('.container-main');
+            
+            for (var i = 0; i < allContainers.length; i++) {
+                if (allContainers[i] === container) {
+                    container.style.display = 'block';
+                } else {
+                    allContainers[i].style.display = 'none';
+                }
+             } 
+            }
+</script></body></html>
