@@ -96,6 +96,27 @@ function lengthConverter() {
       }
  
  }
+
+ if (from == "MilliMeter") {
+    if (to == "KiloMeter") {
+        result = value * 0.000001;
+    } else if (to == "Meter") {
+        result = value * 0.001;
+    } else if (to == "CentiMeter") {
+        result = value * 0.1;
+    } else if (to == "MilliMeter") {
+        result = value;
+    } else if (to == "NanoMeter") {
+        result = value * 1000000;
+    } else if (to == "Mile") {
+        result = value * 6.2137e-7;
+    } else if (to == "Inch") {
+        result = value * 0.0393701;
+    } else if (to == "Foot") {
+        result = value * 0.00328084;
+    }
+}
+
  
  if(from=="NanoMeter") {
      if(to=="KiloMeter") 
